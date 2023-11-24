@@ -1,0 +1,3 @@
+logging:
+  level:
+    "com.orainge.union_message_service.client": debug
