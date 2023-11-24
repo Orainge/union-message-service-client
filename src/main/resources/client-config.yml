@@ -1,0 +1,31 @@
+# 【统一通知推送服务】客户端配置
+# 如果需要生成分发预配置的程序，可以在这里预先设置
+
+#服务端配置
+websocket-server:
+  # 连接服务端失败后等待多少秒后重试 (默认 5 秒)
+  reconnect-wait: 5
+  # 服务器地址 URL (http->ws; https->wss)
+  # e.g.: ws://localhost:9422/exchange
+  url: ""
+
+websocket-client:
+  # 客户端 ID
+  id: ""
+  # 客户端密钥
+  security-key: ""
+
+# 不同操作系统下的配置
+operation-system-config:
+  # MacOS 系统配置
+  macos:
+    # terminal-notifier 配置
+    terminal-notifier:
+      # terminal-notifier 执行路径 (默认由本程序自动解压释放到系统程序文件夹下/bin目录)
+      exec-path: ""
+    # macos-alert 配置（目前使用，预留）
+    macos-alert:
+      # ICON 文件夹路径 (默认为程序文件夹下的 icon)
+      icon-folder-path: ""
+      # macos-alert 执行文件路径 (默认为 /usr/local/bin/alert)
+      exec-path: "/usr/local/bin/alert"
